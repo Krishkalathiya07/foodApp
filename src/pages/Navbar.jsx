@@ -47,7 +47,7 @@ export const Navbar = () => {
                         query: searchQuery,
                     },
                 });
-                setSearchResults(response.data); // Assuming the API response contains the data you need
+                setSearchResults(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -56,7 +56,7 @@ export const Navbar = () => {
         if (searchQuery.trim() !== '') {
             fetchData();
         } else {
-            setSearchResults([]); // Clear search results when search query is empty
+            setSearchResults([]); 
         }
     }, [searchQuery]);
 

@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/login' element={<Login />} />
-          <Route path='/products' element={<ProductCard />}/>
+          <Route path='/' element={<ProductCard />}/>
         </Routes>
       </BrowserRouter>
       <FooterTwo />
